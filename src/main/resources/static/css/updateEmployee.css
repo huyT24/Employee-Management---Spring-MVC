@@ -1,0 +1,41 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    padding: 30px;
+}
+
+#content-container {
+    height: 100%;
+    width: 100%;
+}
+
+#content-container > div {
+    margin: 20px 0px;
+}
+
+input[type=text] {
+    display: block;
+    margin: 10px 0px;
+    width: 300px;
+    padding: 7px 5px;
+}
+
+.update-emplpoyee-btn {
+    padding: 5px 7px;
+    background-color: rgb(18, 168, 131);
+    color: white;
+    border: 1px rgb(18, 168, 131) solid;
+    border-radius: 6px;
+}
+
+#go-back-homepage {
+    text-decoration: none;
+    color: rgb(60, 134, 253);
+}
+
+

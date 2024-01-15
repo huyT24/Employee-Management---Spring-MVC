@@ -1,0 +1,60 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px black solid;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+}
+
+th, td {
+    padding: 14px 12px;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(221, 221, 221);
+}
+
+.title-table {
+    margin-bottom: 20px;
+}
+
+.add-employee-btn {
+    padding: 7px 7px;
+    background-color: rgb(60, 134, 253);
+    color: white;
+    border: 1px rgb(60, 134, 253) solid;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.update-button {
+    padding: 5px 10px;
+    background-color: rgb(60, 134, 253);
+    color: white;
+    border: 1px rgb(60, 134, 253) solid;
+    border-radius: 6px;
+}
+
+.delete-button {
+    padding: 5px 10px;
+    background-color: rgb(192, 58, 58);
+    color: white;
+    border: 1px rgb(192, 58, 58) solid;
+    border-radius: 6px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Employee Management System</title>
+	<link th:href="@{/css/index.css}" rel="stylesheet" />
+    <script type="text/javascript" th:src="@{/js/index.js}"></script>
+</head>
+
+<body>
+	<h1 class="title-table">Employees List</h1>
+	<button class="add-employee-btn">Add Employee</button>
+	<div class="employee-table">
+		<table>
+			<thead>
+				<tr>
+					<th>Employee First Name</th>
+					<th>Employee Last Name</th>
+					<th>Employee Email</th>
+					<th>Actions</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="employee:${listEmployees}">
+					<td th:text="${employee.firstName}"></td>
+					<td th:text="${employee.lastName}"></td>
+					<td th:text="${employee.email}"></td>
+					<td>
+						<button id="update-${employee.id}" class="update-button">
+							Update
+						</button>
+						<button id="delete-${employee.id}" class="delete-button">
+							Delete
+						</button>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+
+</html>
